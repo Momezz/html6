@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight:  300, 400, 600;
+    color: hsl(215, 51%, 70%);
+}
+body .conainer{
+    border-radius: 15px;
+}
+
+.image{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.image img{
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.capa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image .capa{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.263);
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.image:hover > .capa{
+    visibility: visible;
+    opacity: 1;
+}
+
+.capa img{
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    text-align: center;
+    border-radius: 20px;
+    text-align: left;
+    width: 80%;
+}
+
+.info{
+    margin: 6%;
+    line-height: 50px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 23px;
+}
+h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-ethereum{
+    color:  hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.icon-ethereum img{
+    width: 17px;
+    margin-right: 12px;
+}
+
+.icon-clock{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.icon-clock img{
+    width: 30px;
+    margin-right: 12px;
+}
+
+hr{
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.avatar img{
+    border: 3px solid white;
+    border-radius: 100px;
+    width: 60px;
+    margin-right: 22px;
+}
+
+.avatar-text{
+    margin-left: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+}
+
+.avatar-text:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media (min-width: 1440px) {
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
